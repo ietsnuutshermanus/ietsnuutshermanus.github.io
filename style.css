@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Sunshine Boulevard';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Sunshine Boulevard'), url('fonts/SunshineBoulevard.ttf') format('truetype');
+}
+
+.fade-img {
+    position:absolute;
+    top:0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 15s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#main-img-2 {
+    -webkit-animation-delay: -10s;
+    animation-delay: -10s;
+}
+#main-img-3 {
+    -webkit-animation-delay: -5s;
+    animation-delay: -5s;
+}
+
+.wave-divider {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+}
+
+.wave-divider .shape-fill {
+    fill: #F3F4F6;
+}
+
+.wave-divider-coloured {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-divider-coloured svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+}
+
+.wave-divider-coloured .shape-fill {
+    fill: #173651;
+}
