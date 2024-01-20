@@ -1,5 +1,6 @@
 /** @type {import('vite').UserConfig} */
 export default {
+  base: "/ietsnuuts/",
   build: {
     rollupOptions: {
       input: {
