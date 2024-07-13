@@ -18,6 +18,7 @@
     />
   </head>
   <body class="bg-gray-100">
+    <script src="//unpkg.com/alpinejs" defer></script>
     <div class="flex flex-col">
       <div class="h-12 bg-primary flex justify-end items-center pr-2">
         <div class="flex flex-row justify-center text-gray-50 items-center">
@@ -44,7 +45,7 @@
             </a>
           </div>
           <div class="bg-primary h-full w-0.5"></div>
-          <a href="tel:+27831234567" class="hover:bg-primary-light p-2">
+          <a href="tel:+27825653074" class="hover:bg-primary-light p-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -91,8 +92,8 @@
       <div
         class="flex flex-row w-full px-6 py-4 md:p-6 justify-center gap-6 md:gap-10 items-center bg-gray-100"
       >
-        <img src="/images/ietsnuuts.svg" class="w-20 md:w-24 ml-4" />
-        <p class="font-cursive select-none text-4xl md:text-6xl text-primary">
+        <img src="/images/ietsnuuts.svg" class="w-20 md:w-16 ml-4" />
+        <p class="font-cursive select-none text-4xl md:text-5xl text-primary">
           Iets Nuuts
         </p>
       </div>
@@ -113,9 +114,35 @@
       </div>
 
       <div class="fade relative -mt-6 md:-mt-14 z-0">
-        <img id="main-img-1" class="w-full" src="/images/main1.jpg" />
-        <img id="main-img-2" class="w-full fade-img" src="/images/main2.jpg" />
-        <img id="main-img-3" class="w-full fade-img" src="/images/main3.jpg" />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="/images/hero1_portrait.jpg"
+          />
+          <img id="main-img-1" class="w-full" src="/images/hero1.jpg" />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="/images/hero2_portrait.jpg"
+          />
+          <img
+            id="main-img-2"
+            class="w-full fade-img"
+            src="/images/hero2.jpg"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="/images/hero3_portrait.jpg"
+          />
+          <img
+            id="main-img-3"
+            class="w-full fade-img"
+            src="/images/hero3.jpg"
+          />
+        </picture>
       </div>
 
       <div class="flex flex-col my-4 items-center text-center px-4">
@@ -178,27 +205,27 @@
         </div>
 
         <div class="flex flex-col md:flex-row justify-between gap-4 md:mt-4">
-          <div class="flex flex-col gap-4">
-            <img
-              class="h-72"
-              src="https://travelground.imgix.net/AAEAAQAAAAAAAAAAAAAAbc0e741c49ea257d0c6639f2ad1088d8bf433a86a1cabb5c6340518c942c30d4d2bc31ab3a3a396bd2468e7d34ced22c2908?w=2400&fit=fillmax&auto=enhance,format,compress&q=80"
-            />
+          <a class="flex flex-col gap-4" href="rooms.html#room-granate">
+            <picture>
+              <source type="image/avif" srcset="images/granate_main.avif" />
+              <img class="h-72" src="images/granate_main.jpg" />
+            </picture>
             <p class="text-xl text-gray-100 font-bold">Granate</p>
-          </div>
-          <div class="flex flex-col gap-4">
-            <img
-              class="h-72"
-              src="https://travelground.imgix.net/AAEAAQAAAAAAAAAAAAAAbc0e741c49ea257d0c6639f2ad1088d8bf433a86a1cabb5c6340518c942c30d4d2bc31ab3a3a396bd2468e7d34ced22c2908?w=2400&fit=fillmax&auto=enhance,format,compress&q=80"
-            />
+          </a>
+          <a class="flex flex-col gap-4" href="rooms.html#room-olive">
+            <picture>
+              <source type="image/avif" srcset="images/olive_main.avif" />
+              <img class="h-72" src="images/olive_main.jpg" />
+            </picture>
             <p class="text-xl text-gray-100 font-bold">Olive</p>
-          </div>
-          <div class="flex flex-col gap-4">
-            <img
-              class="h-72"
-              src="https://travelground.imgix.net/AAEAAQAAAAAAAAAAAAAAbc0e741c49ea257d0c6639f2ad1088d8bf433a86a1cabb5c6340518c942c30d4d2bc31ab3a3a396bd2468e7d34ced22c2908?w=2400&fit=fillmax&auto=enhance,format,compress&q=80"
-            />
+          </a>
+          <a class="flex flex-col gap-4" href="/rooms.html#room-iets-nuuts">
+            <picture>
+              <source type="image/avif" srcset="images/house_main.avif" />
+              <img class="h-72" src="images/house_main.jpg" />
+            </picture>
             <p class="text-xl text-gray-100 font-bold">Iets Nuuts</p>
-          </div>
+          </a>
         </div>
 
         <a href="/ietsnuuts/rooms.html" class="mb-4">
