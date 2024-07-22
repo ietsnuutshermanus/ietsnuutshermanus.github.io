@@ -4,18 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iets Nuuts Guest House</title>
+    <meta
+      name="description"
+      content="Nestled between mountain and sea in Hermanus, Iets Nuuts guest house is the perfect escape from the hustle and bustle of everyday life."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" href="/ietsnuuts/assets/favicon-W3vYxYz4.ico" type="image/x-icon" />
+
+    <noscript>
+    </noscript>
+
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link rel="stylesheet" crossorigin href="/ietsnuuts/assets/style-ShPUb_3c.css">
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link rel="stylesheet" crossorigin href="/ietsnuuts/assets/main-lYDymaQz.css">
+    <link rel="stylesheet" crossorigin href="/ietsnuuts/assets/style-2psXRBhh.css">
   </head>
   <body class="bg-gray-100">
     <script src="//unpkg.com/alpinejs" defer></script>
@@ -45,21 +71,24 @@
             </a>
           </div>
           <div class="bg-primary h-full w-0.5"></div>
-          <a href="tel:+27825653074" class="hover:bg-primary-light p-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-              />
-            </svg>
+          <a href="/ietsnuuts/rooms.html" class="hover:bg-primary-light p-2">
+            <div class="flex flex-row gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+              <div class="font-bold uppercase">Apartments</div>
+            </div>
           </a>
           <a
             href="https://maps.app.goo.gl/49zuRv3p7CiH7Vjy8"
@@ -92,7 +121,7 @@
       <div
         class="flex flex-row w-full px-6 py-4 md:p-6 justify-center gap-6 md:gap-10 items-center bg-gray-100"
       >
-        <img src="/ietsnuuts/assets/ietsnuuts-43E1DtEN.svg" class="w-20 md:w-16 ml-4" />
+        <img alt="" src="/ietsnuuts/assets/ietsnuuts-43E1DtEN.svg" class="w-20 md:w-16 ml-4" />
         <p class="font-cursive select-none text-4xl md:text-5xl text-primary">
           Iets Nuuts
         </p>
@@ -119,7 +148,12 @@
             media="(max-width: 768px)"
             srcset="/ietsnuuts/images/hero1_portrait.jpg "
           />
-          <img id="main-img-1" class="w-full" src="/ietsnuuts/images/hero1.jpg" />
+          <img
+            alt="Iets Nuuts guest house with the ocean in the background"
+            id="main-img-1"
+            class="w-full"
+            src="/ietsnuuts/images/hero1.jpg"
+          />
         </picture>
         <picture>
           <source
@@ -130,6 +164,7 @@
             id="main-img-2"
             class="w-full fade-img"
             src="/ietsnuuts/images/hero2.jpg"
+            alt="Iets Nuuts guest house's balcony with the mountain in the background"
           />
         </picture>
         <picture>
@@ -141,6 +176,7 @@
             id="main-img-3"
             class="w-full fade-img"
             src="/ietsnuuts/images/hero3.jpg"
+            alt="Iets Nuuts guest house at dusk"
           />
         </picture>
       </div>
@@ -152,9 +188,25 @@
 
         <p class="mt-2 text-gray-700 max-w-prose text-lg">
           Discover the tranquility of our guest house nestled in the picturesque
-          coastal town of Hermanus, renowned for its breathtaking beaches and
-          captivating whale-watching experiences.
+          coastal town of Hermanus, renowned for its breathtaking beaches,
+          captivating whale-watching experiences and annual
+          <a
+            class="text-primary font-bold underline cursor-pointer"
+            href="https://kalfiefees-hermanus.co.za/"
+            target="_blank"
+            >Kalfiefees</a
+          >
+          (1 - 11 August 2024).
         </p>
+        <div class="flex flex-row gap-8 items-center justify-center py-6">
+          <a href="https://kalfiefees-hermanus.co.za/" target="_blank">
+            <img
+              class="w-24 md:w-32"
+              src="/ietsnuuts/assets/kalfie-kunstefees-2024-s2-RhgYcK2J.svg"
+            />
+          </a>
+          <img class="h-24 md:h-32 rounded-2xl" src="/ietsnuuts/assets/kalfiefees-OSZzxBFJ.png" />
+        </div>
         <p class="mt-2 text-gray-700 max-w-prose text-lg">
           Ideally situated within a leisurely stroll, a mere 10-minute walk from
           the beach, our guest house offers a serene escape from the hustle and
@@ -187,11 +239,11 @@
       </div>
       <div class="bg-primary text-center py-4 flex flex-col gap-4">
         <p class="text-gray-100 text-3xl mt-4 font-serif">
-          Enjoy our spacious suites
+          Enjoy our spacious apartments
         </p>
 
         <p class="mt-2 text-gray-100 max-w-prose text-lg self-center mx-4">
-          Our property offers two ground-floor self-catering units with one
+          Our self-catering accommodation offers two ground-floor units with one
           bedroom, one bathroom, a cozy living room, and a fully equipped
           kitchen. The top floor, available as a separate unit, features two
           bedrooms and a spacious kitchen, with a living room that opens to a
@@ -208,21 +260,33 @@
           <a class="flex flex-col gap-4" href="rooms.html#room-granate">
             <picture>
               <source type="image/avif" srcset="images/granate_main.avif " />
-              <img class="h-72" src="images/granate_main.jpg" />
+              <img
+                alt="Pomegranate room at Iets Nuuts guest house"
+                class="h-72"
+                src="images/granate_main.jpg"
+              />
             </picture>
-            <p class="text-xl text-gray-100 font-bold">Granate</p>
+            <p class="text-xl text-gray-100 font-bold">Pomegranate</p>
           </a>
           <a class="flex flex-col gap-4" href="rooms.html#room-olive">
             <picture>
               <source type="image/avif" srcset="images/olive_main.avif " />
-              <img class="h-72" src="images/olive_main.jpg" />
+              <img
+                alt="Olive room at Iets Nuuts guest house"
+                class="h-72"
+                src="images/olive_main.jpg"
+              />
             </picture>
             <p class="text-xl text-gray-100 font-bold">Olive</p>
           </a>
           <a class="flex flex-col gap-4" href="/rooms.html#room-iets-nuuts">
             <picture>
               <source type="image/avif" srcset="images/house_main.avif " />
-              <img class="h-72" src="images/house_main.jpg" />
+              <img
+                alt="Main room at Iets Nuuts guest house"
+                class="h-72"
+                src="images/house_main.jpg"
+              />
             </picture>
             <p class="text-xl text-gray-100 font-bold">Iets Nuuts</p>
           </a>
@@ -232,7 +296,7 @@
           <button
             class="mt-4 bg-gray-100 text-primary px-4 py-2 font-bold rounded hover:bg-gray-200"
           >
-            See More
+            See our apartments
           </button>
         </a>
       </div>

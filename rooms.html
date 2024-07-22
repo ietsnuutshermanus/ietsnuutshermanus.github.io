@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rooms | Iets Nuuts Guest House</title>
+    <title>Apartments | Iets Nuuts Guest House</title>
+    <meta
+      name="description"
+      content="See our rooms and rates at Iets Nuuts guest house"
+    />
     <link rel="stylesheet" href="/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,10 +25,29 @@
   <body>
     <script src="//unpkg.com/alpinejs" defer></script>
     <div class="bg-gray-100 flex flex-col">
+      <a
+        href="/"
+        class="flex flex-row gap-1 bg-primary text-gray-100 justify-center pt-4 cursor-pointer"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="size-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+          />
+        </svg>
+      </a>
       <div
         class="flex flex-row w-full p-6 justify-center gap-6 md:gap-10 items-center bg-primary"
       >
-        <img src="/images/ietsnuuts_light.svg" class="w-20 md:w-24 ml-4" />
+        <img alt="" src="/images/ietsnuuts_light.svg" class="w-20 md:w-24 ml-4" />
         <a href="/ietsnuuts/index.html">
           <p
             class="font-cursive select-none text-4xl md:text-6xl text-gray-100"
@@ -52,7 +75,7 @@
       <div
         class="h-full flex flex-col gap-8 md:pb-8 max-w-screen-2xl self-center mt-8"
       >
-        <p class="text-5xl font-serif text-center text-gray-800">Rooms</p>
+        <p class="text-5xl font-serif text-center text-gray-800">Apartments</p>
 
         <a id="room-iets-nuuts"></a>
         <div class="md:mx-32 text-gray-700">
@@ -87,6 +110,7 @@
                 x-show="i-1 == index"
                 x-bind:src="`images/house/${i-1}.jpg`"
                 x-on:click="handleImageClick"
+                alt="Photo of Iets Nuuts guest house"
               />
             </template>
             <!-- Placeholder until alpinejs loads (prevent jumping around) -->
@@ -94,6 +118,7 @@
               class="w-full"
               x-show="index === -1"
               src="images/house/0.jpg"
+            alt=""
             />
             <img
               class="absolute top-1/2 transform -translate-y-1/2 right-4 h-10 md:h-12 rounded-full p-2 bg-primary hover:bg-primary-light cursor-pointer"
@@ -124,7 +149,7 @@
                   Elevate your coastal retreat in this inviting two-bedroom
                   house perched on the first floor in charming Hermanus, a small
                   seaside town renowned for its whale watching and swimming
-                  spots. With two bathrooms, a well-equipped kitchen, and a
+                  spots. With two en suite bathrooms, a well-equipped kitchen, and a
                   spacious living room offering stunning sea views, this
                   residence is designed for comfort and relaxation,
                   accommodating up to four people. Enjoy the convenience of an
@@ -133,12 +158,10 @@
                 <table class="text-center mt-4 table-auto min-w-80 text-base">
                   <tr>
                     <th>Low Season</th>
-                    <th>High Season</th>
                     <th>Peak Season</th>
                   </tr>
                   <tr>
                     <td>R3,500</td>
-                    <td>R3,700</td>
                     <td>R4,000</td>
                   </tr>
                 </table>
@@ -149,9 +172,6 @@
               <hr class="col-span-9 border-b my-4 border-gray-200 md:hidden" />
               <div class="col-span-9 md:col-span-2">
                 <div class="flex flex-col text-lg">
-                  <p class="mb-2 self-center md:self-start">
-                    House size: 100 m<sup>2</sup>
-                  </p>
                   <!-- Mobile list -->
                   <div
                     class="md:hidden flex flex-row items-center justify-between px-6"
@@ -164,7 +184,7 @@
                     </ul>
                     <ul class="list-disc">
                       <li>Indoor braai</li>
-                      <li>WiFi</li>
+                      <li>Free WiFi</li>
                       <li>Flat-screen TV</li>
                     </ul>
                   </div>
@@ -172,7 +192,7 @@
                   <ul class="hidden md:block list-disc">
                     <li>Two Bedrooms</li>
                     <li>Fully equipped kitchen</li>
-                    <li>WiFi</li>
+                    <li>Free WiFi</li>
                     <li>Flat-screen TV</li>
                     <li>Balcony</li>
                     <li>Sea view</li>
@@ -224,6 +244,7 @@
                 x-show="i-1 == index"
                 x-bind:src="`images/olive/${i-1}.jpg`"
                 x-on:click="handleImageClick"
+                alt="Photo of the Olive room at Iets Nuuts guest house"
               />
             </template>
             <img
@@ -261,13 +282,11 @@
                 <table class="text-center mt-4 table-auto min-w-80 text-base">
                   <tr>
                     <th>Low Season</th>
-                    <th>High Season</th>
                     <th>Peak Season</th>
                   </tr>
                   <tr>
                     <td>R900</td>
-                    <td>R1,000</td>
-                    <td>R1,100</td>
+                    <td>R1500</td>
                   </tr>
                 </table>
               </div>
@@ -277,29 +296,24 @@
               <hr class="col-span-9 border-b my-4 border-gray-200 md:hidden" />
               <div class="col-span-9 md:col-span-2">
                 <div class="flex flex-col text-lg">
-                  <p class="mb-2 self-center md:self-start">
-                    Apartment size: 45 m<sup>2</sup>
-                  </p>
                   <!-- Mobile list -->
                   <div
                     class="md:hidden flex flex-row items-center justify-between px-6"
                   >
                     <ul class="list-disc">
-                      <li>WiFi</li>
-                      <li>Flat-screen TV</li>
                       <li>Kitchen</li>
+                      <li>Outdoor braai</li>
                     </ul>
                     <ul class="list-disc">
-                      <li>Porch</li>
-                      <li>Outdoor braai</li>
+                      <li>Free WiFi</li>
+                      <li>Flat-screen TV</li>
                     </ul>
                   </div>
                   <!-- Desktop list -->
                   <ul class="hidden md:block list-disc">
-                    <li>WiFi</li>
+                    <li>Free WiFi</li>
                     <li>Flat-screen TV</li>
                     <li>Kitchen</li>
-                    <li>Porch</li>
                     <li>Outdoor braai</li>
                   </ul>
                   <a href="/ietsnuuts/book.html" class="self-center">
@@ -348,12 +362,14 @@
                 x-show="i-1 == index"
                 x-bind:src="`images/granate/${i-1}.jpg`"
                 x-on:click="handleImageClick"
+                alt="Photo of Pomegranate room at Iets Nuuts guest house"
               />
             </template>
             <img
               class="absolute top-1/2 transform -translate-y-1/2 right-4 h-10 md:h-12 rounded-full p-2 bg-primary hover:bg-primary-light cursor-pointer"
               src="images/chevron_right.svg"
               x-on:click="next"
+              alt=""
             />
             <div
               class="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-row gap-5"
@@ -369,28 +385,26 @@
           <div
             class="bg-white md:mx-16 relative z-10 -top-5 flex flex-col gap-2 p-6 border border-gray-200 shadow text-lg"
           >
-            <p class="text-4xl text-center md:text-left font-serif">Granate</p>
+            <p class="text-4xl text-center md:text-left font-serif">Pomegranate</p>
 
             <div class="grid grid-cols-9">
               <div class="col-span-9 md:col-span-6 flex flex-col items-center">
                 <p class="font-sans text-center md:text-left">
-                  Experience coastal living at its finest in Granate, a charming
+                  Experience coastal living at its finest in Pomegranate, a spacious
                   one-bedroom ground-floor apartment in Hermanus, renowned for
                   its pristine beaches and captivating whale watching. The
                   well-appointed space seamlessly combines comfort and
-                  convenience, featuring a cozy bedroom, stylish bathroom, and
+                  convenience, featuring a cozy bedroom, stylish en suite bathroom, and
                   an integrated kitchen and living area.
                 </p>
                 <table class="text-center mt-4 table-auto min-w-80 text-base">
                   <tr>
                     <th>Low Season</th>
-                    <th>High Season</th>
                     <th>Peak Season</th>
                   </tr>
                   <tr>
                     <td>R900</td>
-                    <td>R1,000</td>
-                    <td>R1,100</td>
+                    <td>R1500</td>
                   </tr>
                 </table>
               </div>
@@ -400,29 +414,24 @@
               <hr class="col-span-9 border-b my-4 border-gray-200 md:hidden" />
               <div class="col-span-9 md:col-span-2">
                 <div class="flex flex-col text-lg">
-                  <p class="mb-2 self-center md:self-start">
-                    Apartment size: 45 m<sup>2</sup>
-                  </p>
                   <!-- Mobile list -->
                   <div
                     class="md:hidden flex flex-row items-center justify-between px-6"
                   >
                     <ul class="list-disc">
-                      <li>WiFi</li>
-                      <li>Flat-screen TV</li>
                       <li>Kitchen</li>
+                      <li>Outdoor braai</li>
                     </ul>
                     <ul class="list-disc">
-                      <li>Porch</li>
-                      <li>Outdoor braai</li>
+                      <li>Free WiFi</li>
+                      <li>Flat-screen TV</li>
                     </ul>
                   </div>
                   <!-- Desktop list -->
                   <ul class="hidden md:block list-disc">
-                    <li>WiFi</li>
+                    <li>Free WiFi</li>
                     <li>Flat-screen TV</li>
                     <li>Kitchen</li>
-                    <li>Porch</li>
                     <li>Outdoor braai</li>
                   </ul>
                   <a href="/ietsnuuts/book.html" class="self-center">
